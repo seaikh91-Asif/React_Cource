@@ -10,8 +10,6 @@ function App() {
       <div className="w-full h-screen duration-200ffffffffffff"
       ></div>
 
-
-
       
     
   )
