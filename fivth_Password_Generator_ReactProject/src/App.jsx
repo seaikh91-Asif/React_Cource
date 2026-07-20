@@ -28,9 +28,9 @@ function App() {
   }, [lenght, numberAllowd, charAllowd, setPassword])
 
   const copyPasswordToClipboard = useCallback(() => {
-    passwordRef.current?.select(); 
-    passwordRef.current?.setSelectionRange(0, 5); 
-    window.navigator.clipboard.writeText(password)
+    passwordRef.current?.select(); // for chaging the state of the password that  user can see that password is selected
+    passwordRef.current?.setSelectionRange(0, 5); // for selectin  particuller range of text.
+    window.navigator.clipboard.writeText(password)//for coppying the text in input box.
   }, [password])
 
   useEffect(() => {
